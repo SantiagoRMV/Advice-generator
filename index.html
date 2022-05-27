@@ -15,14 +15,16 @@
   </style>
 </head>
 <body>
-
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
-  
+    <input type="text" placeholder="Search by any word" id="search">
+    <button onclick="getSearchValue()">Search</button>
+    <div id="advicePlaceholder">
+        <h1></h1>
+    </div>
+    <button onclick="adviceGenerator()">New advice</button>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Santiago Romero</a>.
   </div>
+  <script src="./script/main.js"></script>
 </body>
 </html>
