@@ -11,28 +11,50 @@ body {
     font-family: var(--font-family);
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h6 {
+    color: var(--button-color);
+    margin-top: 10px;
+}
+
 .advicePlaceholder {
     display: flex;
     margin: auto;
     margin-top: 150px;
-    width: 600px;
+    width: 400px;
     height: 250px;
     border-radius: 10px;
     background:var(--target-color);
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
+    box-shadow: 10px 10px 30px hsl(220, 17%, 17%)
 }
 
 .advice {
     color: var(--advice-color);
+    margin-top: 0px;
+}
+
+.separator {
+    margin-bottom: 5px;
 }
 
 .newAdvice {
+    display: flex;
     background: var(--button-color);
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
 }

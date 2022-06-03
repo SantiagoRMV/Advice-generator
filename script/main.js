@@ -4,7 +4,9 @@ const API_URL = "https://api.adviceslip.com/advice";
 async function adviceGenerator() {
     const response = await fetch(API_URL);
     const data = await response.json();
-    const text = document.querySelector('h1')
+    const text = document.querySelector('h1');
+    const id  = document.querySelector('h6');
+    id.innerHTML = "ADVICE #" + data.slip.id;
     text.innerHTML = data.slip.advice;
     //console.log(data.slip.advice); 
 }
