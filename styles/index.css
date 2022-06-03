@@ -1,0 +1,38 @@
+:root{
+    --bg-color: hsl(218, 23%, 16%);
+    --target-color: hsl(217, 19%, 24%);
+    --advice-color: hsl(193, 38%, 86%); 
+    --button-color: hsl(150, 100%, 66%);
+    --font-family: 'Manrope', sans-serif;;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
+}
+
+.advicePlaceholder {
+    display: flex;
+    margin: auto;
+    margin-top: 150px;
+    width: 600px;
+    height: 250px;
+    border-radius: 10px;
+    background:var(--target-color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.advice {
+    color: var(--advice-color);
+}
+
+.newAdvice {
+    background: var(--button-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
